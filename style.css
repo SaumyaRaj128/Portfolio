@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+.center-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+#wrapper-canvas canvas{
+    max-width: 100%;
+}

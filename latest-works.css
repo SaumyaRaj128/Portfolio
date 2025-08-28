@@ -1,0 +1,125 @@
+body {
+    background: #111;
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.lw-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem 2rem 1rem 2rem;
+    background: #181818;
+    border-bottom: 1px solid #222;
+}
+.lw-logo img {
+    height: 60px;
+}
+.lw-header h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin: 0;
+}
+.lw-main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+}
+.lw-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    max-width: 1100px;
+}
+.lw-card {
+    background: #181828;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 24px #0004;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s;
+}
+.lw-card:hover {
+    transform: translateY(-8px) scale(1.03);
+}
+.lw-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    background: #222;
+}
+.lw-card-content {
+    padding: 1.2rem 1.5rem 1.5rem 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.lw-card-content h2 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.lw-tags {
+    margin: 0.5rem 0 0.7rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.lw-tag {
+    background: #222a;
+    color: #fb4bb7;
+    font-size: 0.85rem;
+    padding: 0.25rem 0.7rem;
+    border-radius: 999px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border: 1px solid #fb4bb7;
+    transition: background 0.2s, color 0.2s;
+}
+.lw-tag:hover {
+    background: #fb4bb7;
+    color: #fff;
+}
+.lw-card-content p {
+    flex: 1;
+    margin: 0 0 1rem 0;
+    color: #b0b2c3;
+}
+.lw-btn {
+    display: inline-block;
+    background: linear-gradient(90deg, #1540b6 0%, #fb4bb7 100%);
+    color: #fff;
+    padding: 0.6rem 1.4rem;
+    border-radius: 8px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.2s;
+}
+.lw-btn:hover {
+    background: linear-gradient(90deg, #fb4bb7 0%, #1540b6 100%);
+    transform: scale(1.05);
+}
+.lw-footer {
+    text-align: center;
+    padding: 1.2rem 0 0.8rem 0;
+    color: #b0b2c3;
+    font-size: 1rem;
+    background: #181818;
+    border-top: 1px solid #222;
+}
+@media (max-width: 600px) {
+    .lw-header, .lw-main {
+        padding: 1rem;
+    }
+    .lw-card img {
+        height: 120px;
+    }
+}
